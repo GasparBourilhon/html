@@ -25,11 +25,13 @@ img{
 	
 	
 }
+
+
 aside{background-color: #2b2b2b;
 
 }
 .navbarbg-light{
-
+padding: 10px;
 }
 .container{
 	background-color: #2b2b2b;
@@ -233,15 +235,15 @@ textarea{
 	max-height: 300px;
 	max-width: 100%;
 }
-#boton{
+wqe#boton{
 	background: #2b2b2b;
 	color: beige;
 	padding: 20px;
 }
-#boton:hover{
+we#boton:hover{
 	cursor: pointer;
 }
-@media (max-width:480px){
+we@media (max-width:480px){
    form{
 	width: 100%;
    }
