@@ -13,7 +13,7 @@
 	<header>
 	
 		<nav>
-			<nav class="navbar bg-light">
+			<nav class="navbarbg-light">
 				<div class="container">
 				  <a class="navbar-brand" href="#">
 					<img src="img/logo1.png" alt="" width="50" height="80">
@@ -35,12 +35,20 @@
 
 	<form class="form1" action="#" method="#" accept-charset="utf-8">
 		<h2>CONTACTO</h2>
-		<input class="completar" type="text" name="Nombre" value="" placeholder="Nombre">
-		<input type="text" name="Apellido" value="" placeholder="Apellido">
-		
+		<div class="row">
+			<div class="col">
+			  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+			</div>
+			<div class="col">
+			  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+			</div>
+		  </div>
 		<input type="email" name="email" value="" placeholder="e-mail">
 		
-		<textarea name="textarea" placeholder="consulta" cols="60px" rows="20px"></textarea>
+		<div class="form-floating">
+			<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+			<label for="floatingTextarea2">Comments</label>
+		  </div>
 		<button type="button" class="btn btn-primary"
         style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
   Custom button
