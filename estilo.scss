@@ -1,0 +1,261 @@
+@import "variables";
+html{
+	background-color:$colorfondo;
+	
+}
+body{
+font-family: 'Lexend Peta';
+background-color: $colorfondo;	
+}
+h1{
+	font-family: 'Montserrat';
+}
+header{ background-color: $colorfondo;
+}
+footer{background-color: $colorfondo;
+	color: beige;
+	padding-top: 300px;
+
+}
+section{background-color: $colorfondo;
+       img{ 
+        background-color: $colorfondo;
+        box-shadow: 20px 20px 10px rgba(0,0,0,.25);
+        
+        
+    }
+
+}
+img{ 
+	background-color: $colorfondo;
+	box-shadow: 20px 20px 10px rgba(0,0,0,.25);
+	
+	
+}
+
+
+aside{background-color: $colorfondo;
+
+}
+.navbar-bg-light{
+padding: 10px;
+}
+.container{
+	background-color: $colorfondo;
+	padding: 10px;
+}
+
+.inline{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows:  auto auto;
+	
+	background-color: $colorfondo;
+	padding-left: 300px;
+	padding-right: 200px;
+	align-items: center;
+	justify-items: center;
+	
+	
+	
+	
+}
+.img1{
+	width: 600px;
+	height: 600px;
+	
+
+
+}
+li{
+	display:inline-flex;
+	font-family: 'Montserrat';
+	font-size: 40px;
+	list-style: none;
+	background-color: $colorfondo;
+	min-height: 70px;
+	padding: 15px;
+	
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: left;
+	margin-bottom: 30px;
+	text-decoration: none;
+
+     a{text-decoration: none;
+        color: beige;
+        &:hover{
+            color: #000;
+        }
+        
+    }
+}
+
+li a:hover{
+	color: #000;
+}
+@media (max-width:300px){
+	header{
+		flex-direction: column;
+		
+	}
+
+	
+}
+
+
+.logo1{
+	
+	width: 250px;
+	height: 400px;	
+	
+}
+.estudiofrente { 
+	width: 600px;
+	height: 800px;
+	
+	
+}
+
+
+	
+
+.line{text-decoration: none;
+	font-size: 40px;
+	padding-bottom: 200px;
+}
+.row{
+	padding-bottom: 30px;
+}
+.form-floating{
+	padding-top: 30px;
+}
+
+
+.nombre{
+	font-family: 'Lexend Peta';
+	font-size: 50px;
+	color: beige;
+	text-align: center;
+	sdfmargin-bottom: 30px;
+	sdfmargin-top: 30px;
+
+}
+.quiensoy{
+	font-size: 40px;
+	padding-bottom: 100px;
+	padding-left: 200px;
+}
+
+
+.padre{
+	width: 80%;
+	height: 500px;
+	background-color:$colorfondo;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+	
+	
+.contenedor{
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	row-gap: 101px;
+	width: 90%; 
+	max-width: 1280px;
+	border: 10px solid #000; 
+	margin:auto;
+	font-size: 50px;
+	line-height: 50px;
+	text-align: center;
+	
+}
+
+.contenedor >div{
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	padding: 60px;
+	color: #fff;
+	background: #e6e6e6;
+	box-shadow: 20px 20px 10px rgba(0,0,0,.25);
+
+}
+.contenedor1{
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	row-gap: 101px;
+	width: 90%; 
+	max-width: 1845px;
+	border: 10px solid #000; 
+	margin:auto;
+	font-size: 50px;
+	line-height: 50px;
+	text-align: center;
+
+}
+.contenedor1 >div{display: grid;
+	padding: 60px;
+	color: #fff;
+	background: #e6e6e6;
+	box-shadow: 20px 20px 10px rgba(0,0,0,.25);
+
+
+}
+
+
+.contenedordsfsdfsdf{ 
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+form{
+	width: 700px;
+	margin: auto;
+	background: rgba(0,0,0,0.4);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	border-radius: 7px;
+}
+
+h2{
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+input, textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 17px;
+	border: none;
+
+}
+textarea{ 
+	min-height: 100px;
+	max-height: 300px;
+	max-width: 100%;
+}
+wqe#boton{
+	background: #2b2b2b;
+	color: beige;
+	padding: 20px;
+}
+we#boton:hover{
+	cursor: pointer;
+}
+@media (max-width:480px){
+   form{
+	width: 100%;
+   }
+}
