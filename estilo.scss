@@ -7,42 +7,50 @@ body{
 font-family: 'Lexend Peta';
 background-color: $colorfondo;	
 }
-h1{
-	font-family: 'Montserrat';
-}
+
 header{ background-color: $colorfondo;
+	.navbarbg-light{
+		padding: 10px;
+		background-color: $colorfondo;
+		   .container{
+			background-color: $colorfondo;
+			padding: 10px;
+			  .nombre{
+				font-family: 'Lexend Peta';
+				font-size: 50px;
+				color: $colorletras;
+				text-align: center;
+			
+			}
+		}
+		}
+		
 }
 footer{background-color: $colorfondo;
 	color: beige;
 	padding-top: 300px;
+	@each $red, $color in $redes{
+	.#{$red}{
+		color: $color;
+	}
+}
+.newButton{
+	@extend .btn !optional;
+	color: map-get($map: $redes, $key: instagram );
+}
 
 }
 section{background-color: $colorfondo;
        img{ 
         background-color: $colorfondo;
-        box-shadow: 20px 20px 10px rgba(0,0,0,.25);
-        
+        box-shadow: 20px 20px 10px rgba(0,0,0,.25); 
         
     }
 
 }
-img{ 
-	background-color: $colorfondo;
-	box-shadow: 20px 20px 10px rgba(0,0,0,.25);
-	
-	
-}
-
 
 aside{background-color: $colorfondo;
 
-}
-.navbar-bg-light{
-padding: 10px;
-}
-.container{
-	background-color: $colorfondo;
-	padding: 10px;
 }
 
 .inline{
@@ -55,41 +63,60 @@ padding: 10px;
 	padding-right: 200px;
 	align-items: center;
 	justify-items: center;
+	.logo1{
+		width: 250px;
+		height: 400px;	
+		
+	}
+	.estudiofrente { 
+		width: 600px;
+		height: 800px;
+		
+		
+	}
 	
 	
 	
 	
 }
-.img1{
-	width: 600px;
-	height: 600px;
-	
 
 
+.info{
+	font-size: 25px;
 }
-li{
+ul{
 	display:inline-flex;
-	font-family: 'Montserrat';
-	font-size: 40px;
-	list-style: none;
-	background-color: $colorfondo;
-	min-height: 70px;
-	padding: 15px;
+	background-color:$colorfondo ;
+	padding: none;
+	li{
+		display:inline-flex;
+		font-family: 'Montserrat';
+		font-size: 40px;
+		list-style: none;
+		background-color: $colorfondo;
+		min-height: 10px;
+		padding: 15px;
+		color: beige;
+		flex-direction: row;
+		justify-content: space-between;
+		text-align: left;
+		margin-bottom: 10px;
+		text-decoration: none;
 	
-	flex-direction: row;
-	justify-content: space-between;
-	text-align: left;
-	margin-bottom: 30px;
-	text-decoration: none;
-
-     a{text-decoration: none;
-        color: beige;
-        &:hover{
-            color: #000;
-        }
-        
-    }
+		 a{text-decoration: none;
+			color: beige;
+			&:hover{
+				color: #000;
+				.line{text-decoration: none;
+					font-size: 40px;
+					padding-bottom: 30px;
+				}
+			}
+			
+		}
+	}
 }
+
 
 li a:hover{
 	color: #000;
@@ -103,33 +130,55 @@ li a:hover{
 	
 }
 
-
-.logo1{
-	
-	width: 250px;
-	height: 400px;	
-	
-}
-.estudiofrente { 
+form{
 	width: 600px;
-	height: 800px;
-	
-	
+	margin: auto;
+	background: rgba(0,0,0,0.4);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	border-radius: 7px;
 }
+	h2{
+		color: #fff;
+		text-align: center;
+		margin: 0;
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
 
+		input, textarea {
+			width: 100%;
+			margin-bottom: 20px;
+			padding: 7px;
+			box-sizing: border-box;
+			font-size: 17px;
+			border: none;
+		
+		}
+		textarea{ 
+			min-height: 100px;
+			max-height: 200px;
+			max-width: 100%;
+		}
 
+			.row{
+				padding-bottom: 30px;
+			}
+			#boton{
+				background: #2b2b2b;
+				color: beige;
+				padding: 20px;
+			}
+			#boton:hover{
+				cursor: pointer;
+			}
+			@media (max-width:480px){
+				form{
+				 width: 100%;
+				}
+			 }
 	
-
-.line{text-decoration: none;
-	font-size: 40px;
-	padding-bottom: 200px;
-}
-.row{
-	padding-bottom: 30px;
-}
-.form-floating{
-	padding-top: 30px;
-}
 
 
 .nombre{
@@ -137,17 +186,12 @@ li a:hover{
 	font-size: 50px;
 	color: beige;
 	text-align: center;
-	sdfmargin-bottom: 30px;
-	sdfmargin-top: 30px;
-
 }
-.quiensoy{
-	font-size: 40px;
-	padding-bottom: 100px;
-	padding-left: 200px;
+.fondo{
+	display: flex;
+	padding-bottom: 20px;
+	padding-top: 40px;
 }
-
-
 .padre{
 	width: 80%;
 	height: 500px;
@@ -157,18 +201,44 @@ li a:hover{
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	
+	.img1{
+		display: flex;
+		padding-bottom: 20px;
+		width: 600px;
+		height: 600px;
+		background-color: $colorfondo;
 }
+
+}
+.quiensoy{
+	font-size: 30px;
+	padding-bottom: 100px;
+	padding-left: 200px;
+	color: beige;
+	background-color: $colorfondo;
+}
+.descripcion{
+	display: flex;
+	color: beige;
+	font-family: 'Montserrat';
+	font-size: 30px;
+	background-color: $colorfondo;
+	padding-top: 20px;
+
+}
+
+
+
 	
-	
+
 .contenedor{
 	display: grid;
+	background: $colorfondo;
 	grid-template-columns: auto;
 	grid-template-rows: auto;
 	row-gap: 101px;
 	width: 90%; 
 	max-width: 1280px;
-	border: 10px solid #000; 
 	margin:auto;
 	font-size: 50px;
 	line-height: 50px;
@@ -181,8 +251,8 @@ li a:hover{
 	grid-template-columns: auto;
 	grid-template-rows: auto;
 	padding: 60px;
-	color: #fff;
-	background: #e6e6e6;
+	color: $colorfondo;
+	background: $colorfondo;
 	box-shadow: 20px 20px 10px rgba(0,0,0,.25);
 
 }
@@ -193,7 +263,7 @@ li a:hover{
 	row-gap: 101px;
 	width: 90%; 
 	max-width: 1845px;
-	border: 10px solid #000; 
+	background: $colorfondo;
 	margin:auto;
 	font-size: 50px;
 	line-height: 50px;
@@ -202,60 +272,20 @@ li a:hover{
 }
 .contenedor1 >div{display: grid;
 	padding: 60px;
-	color: #fff;
-	background: #e6e6e6;
+	color: $colorfondo;
+	background: $colorfondo;
 	box-shadow: 20px 20px 10px rgba(0,0,0,.25);
 
 
 }
 
-
-.contenedordsfsdfsdf{ 
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 10px;
+.mapa{
+	background-color: $colorfondo ;
 }
-form{
-	width: 700px;
-	margin: auto;
-	background: rgba(0,0,0,0.4);
-	padding: 10px 20px;
-	box-sizing: border-box;
-	margin-top: 20px;
-	border-radius: 7px;
+@mixin sizes($width, $height) {
+	height: $height;
+	width: $width;
 }
-
-h2{
-	color: #fff;
-	text-align: center;
-	margin: 0;
-	font-size: 30px;
-	margin-bottom: 20px;
-}
-input, textarea {
-	width: 100%;
-	margin-bottom: 20px;
-	padding: 7px;
-	box-sizing: border-box;
-	font-size: 17px;
-	border: none;
-
-}
-textarea{ 
-	min-height: 100px;
-	max-height: 300px;
-	max-width: 100%;
-}
-wqe#boton{
-	background: #2b2b2b;
-	color: beige;
-	padding: 20px;
-}
-we#boton:hover{
-	cursor: pointer;
-}
-@media (max-width:480px){
-   form{
-	width: 100%;
-   }
+.logo1{
+	@include sizes(250px, 400px)
 }
